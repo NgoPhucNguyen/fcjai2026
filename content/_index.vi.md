@@ -25,7 +25,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 12/08/2025 đến ngày 12/11/2025
 
-<img src="{{ .Site.BaseURL }}images/avatar.png" width="200">
+![Ảnh đại diện](/static/images/avatar.png)
 
 
 ### Nội dung báo cáo
