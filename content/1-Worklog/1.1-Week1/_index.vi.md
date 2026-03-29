@@ -15,7 +15,7 @@ pre: " <b> 1.1. </b> "
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | :--- | :--- | :--- | :--- | :--- |
 | 📅 2 | - Làm quen với các thành viên trong nhóm (4 AI Specialists & 1 CyberSec). <br> - Thống nhất công cụ liên lạc và quy trình làm việc Agile. | 11/08/2025 | 11/08/2025 | Nội bộ nhóm |
-| 📅 3 | - Tìm hiểu tổng quan về AWS Services qua các video hướng dẫn. <br> - Xem cách triển khai các dịch vụ cơ bản (EC2, S3, RDS) trên YouTube. | 12/08/2025 | 12/08/2025 | [AWS Study Group Channel]|
+| 📅 3 | - Tìm hiểu tổng quan về AWS Services qua các video hướng dẫn. <br> - Xem cách triển khai các dịch vụ cơ bản (EC2, S3, RDS) trên YouTube. | 12/08/2025 | 12/08/2025 | [[AWS Study Group Channel]](https://cloudjourney.awsstudygroup.com/)|
 | 📅 4 | - Tiếp tục nghiên cứu chuyên sâu về AWS Services trên YouTube. <br> - Tìm hiểu các mô hình kiến trúc phổ biến cho ứng dụng E-commerce. | 13/08/2025 | 13/08/2025 | YouTube |
 | 📅 5 | - Họp nhóm trực tuyến/trực tiếp. <br> - **Giao việc:** Phân chia mỗi thành viên tìm hiểu sâu về một khía cạnh của đề tài (AI Model, Database, Security). | 14/08/2025 | 14/08/2025 | Nội bộ nhóm |
 | 📅 6 | - Tiếp tục xem các case study về AWS trên YouTube để tối ưu hóa chi phí. <br> - Tổng hợp lại các kiến thức đã xem để chuẩn bị tạo tài khoản thực hành. | 15/08/2025 | 15/08/2025 | YouTube |
