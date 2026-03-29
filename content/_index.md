@@ -13,15 +13,15 @@ chapter: false
 {{% /notice %}}
 
 ### Student Information:
-&emsp; **Full Name:** Nguyen Van A
+&emsp; **Full Name:** Ngo Phuc Nguyen
 
-&emsp; **Phone Number:** 0989888999 
+&emsp; **Phone Number:** 0902182458
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Email:** phucnguyenngo2005@gmail.com
 
-&emsp; **University:** Ho Chi Minh City University of Technology and Education
+&emsp; **University:** FPT University
 
-&emsp; **Major:** Information Technology
+&emsp; **Major:** Artificial Intelligence
 
 &emsp; **Class:** AWS082025
 
