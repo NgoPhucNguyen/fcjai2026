@@ -1,29 +1,29 @@
 ---
-title: "Event 2"
-date: 2024-03-14
+title: "Event 1"
+date: 2024-01-01
 weight: 1
 chapter: false
-pre: " <b> 4.2. </b> "
+pre: " <b> 4.1. </b> "
 ---
 
 {{% notice warning %}}
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-# “Cloud Mastery 2026 #1 AI from Scratch”
+# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
 
 ### Mục Đích Của Sự Kiện
 
-- Gioi Thieu
+- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
 - Giới thiệu phương pháp DDD và event-driven architecture
 - Hướng dẫn lựa chọn compute services phù hợp
 - Giới thiệu công cụ AI hỗ trợ development lifecycle
 
 ### Danh Sách Diễn Giả
 
-- **Anh Dinh Le Hoang** - AI Engineer
-- **Vinh Banh Cam** - Data Engineer
-- **Thinh Nguyen Tuan** - DevOps Engineer
+- **Jignesh Shah** - Director, Open Source Databases
+- **Erica Liu** - Sr. GTM Specialist, AppMod
+- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
 
 ### Nội Dung Nổi Bật
 

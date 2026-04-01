@@ -1,68 +1,46 @@
 ---
-title: "Event 2"
-date: 2024-03-14
-weight: 1
+title: "Các events đã tham gia"
+date: 2024-01-01
+weight: 4
 chapter: false
-pre: " <b> 4.2. </b> "
+pre: " <b> 4. </b> "
 ---
 
-# “Cloud Mastery 2026 #1 AI from Scratch”
+{{% notice warning %}}
+⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
+{{% /notice %}}
 
-### Mục Đích Của Sự Kiện
-
-- Giới thiệu cơ bản về Strands Agent
-- Hướng dẫn sử dụng AI hiệu quả , nâng cao chất lượng của LLM output.
-- Demo IoT AI Project , cách sử dụng dịch vụ của AWS.
-
-### Chi Tiết Diễn Giả & Chủ Đề Trình Bày
-
-**1. Anh Vinh Banh Cam - Data Engineer**
-* **Chủ đề:** Giới thiệu và Ứng dụng Strands Agent
-* **Nội dung chính:** Đi sâu vào khái niệm và kiến trúc của Strands Agent. Trình bày cách các Agent tự trị (Autonomous Agents) có thể được lập trình để thực hiện các chuỗi tác vụ phức tạp, tự động hóa quy trình làm việc và tối ưu hóa hệ thống ra quyết định trong môi trường doanh nghiệp.
-
-**2. Anh Thinh Nguyen Tuan - DevOps Engineer**
-* **Chủ đề:** Prompt Engineering & Tối ưu hóa LLM Output
-* **Nội dung chính:** Chia sẻ các kỹ thuật Prompt Engineering nâng cao để khai thác tối đa sức mạnh của Large Language Models (LLM).Hướng dẫn cách thiết kế prompt có cấu trúc (như Retrieval-Augmented Generation(RAG), Role Prompting, Chain-of-Thought) để kiểm soát định dạng, giảm thiểu hallucination (ảo giác AI) và nâng cao chất lượng, độ chính xác của kết quả đầu ra.
-
-**3. Anh Dinh Le Hoang - AI Engineer**
-* **Chủ đề:** Tích hợp IoT AI với AWS Services Cơ bản
-* **Nội dung chính:** Trình bày cách kết hợp các thiết bị IoT với AI edge computing, đồng thời truyền tải và xử lý dữ liệu thông qua các dịch vụ AWS cốt lõi (như AWS IoT Core, API Gateway, và Lambda) một cách hiệu quả, tiết kiệm chi phí nhưng vẫn đảm bảo khả năng mở rộng (scalability) cao.
-
-### Nội Dung Nổi Bật
-
-#### 1. Phần trình bày của Anh Vinh Banh Cam: Giới thiệu và Ứng dụng Strands Agent
-- Nói về giới hạn của LLMs, làm sao để kết nối LLMs với những công cụ (tools)
-- Giải thích về AI Agent, tại sao ta cần nó
-- Giới thiệu về Strands Agents, workflow 
-- Demo đơn giản để hiểu cách implement về Strands Agents
-
-#### 2. Phần trình bày của Anh Thinh Nguyen Tuan: Prompt Engineering & Tối ưu hóa LLM Output
-- Giải thích tại sao Prompt Engineering quan trọng
-- Những gì làm nên một Prompt tốt? 
-- Hiểu về chi phí của những model AI là cực kỳ quan trọng
-- Những kỹ thuật nâng cao ( CoT, ToT, RAG )
-- Demo Proptimizer, extension trong việc tối ưu prompt
-
-#### 3. Phần trình bày của Anh Dinh Le Hoang: Tích hợp IoT AI với AWS Services Cơ bản
-- [Ghi chi tiết nội dung Anh Hoàng trình bày về AWS IoT Core, API Gateway, Lambda tại đây...]
-- [Thêm cách kết hợp thiết bị IoT với AI edge computing tại đây...]
-- [Thêm các ý chính...]
+> Trong phần này, các bạn cần liệt kê và mô tả chi tiết các sự kiện (event) mà mình đã tham gia trong suốt quá trình thực tập hoặc làm việc. 
+> 
+> Mỗi sự kiện nên được trình bày theo định dạng Event 1, Event 2, Event 3…, kèm theo các thông tin:
+> * Tên sự kiện
+> * Thời gian tổ chức
+> * Địa điểm (nếu có)
+> * Vai trò của bạn trong sự kiện (người tham dự, hỗ trợ tổ chức, diễn giả, v.v.)
+> * Mô tả ngắn gọn nội dung và hoạt động chính trong sự kiện
+> * Kết quả hoặc giá trị đạt được (bài học, kỹ năng mới, đóng góp cho nhóm/dự án)
+> * Việc liệt kê này giúp thể hiện rõ sự tham gia thực tế của bạn, cũng như các kỹ năng mềm và kinh nghiệm bạn đã tích lũy qua từng sự kiện.
 
 
-### Trải nghiệm trong event
+Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh khắc rất tuyệt vời.
+
+### [Event 1](4.1-Event1/)
+&emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
+
+&emsp;**Thời gian:** 09:00 ngày 13/08/2025
+
+&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+
+&emsp;**Vai trò trong sự kiện:** Người tham dự 
 
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
 
-#### Trải nghiệm kỹ thuật thực tế
+### [Event 2](4.2-Event2/)
+&emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
 
-#### Ứng dụng công cụ hiện đại
+&emsp;**Thời gian:** 09:00 ngày 13/08/2025
 
-#### Kết nối và trao đổi
+&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
 
-#### Bài học rút ra
+&emsp;**Vai trò trong sự kiện:** Người tham dự 
 
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
