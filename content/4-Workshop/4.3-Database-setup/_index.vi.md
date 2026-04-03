@@ -1,18 +1,23 @@
 ---
-title : "Truy cập S3 từ VPC"
-date : 2024-01-01 
+title : "Sử dụng Prisma trong RDS"
+date : 2026-04-02 
 weight : 3
 chapter : false
-pre : " <b> 5.3. </b> "
+pre : " <b> 4.3. </b> "
 ---
 
-#### Sử dụng Gateway endpoint
+#### Sử dụng Prisma trong RDS
 
-Trong phần này, bạn sẽ tạo một Gateway endpoint để truy cập Amazon S3 từ một EC2 instance. Gateway endpoint sẽ cho phép tải một object lên S3 bucket mà không cần sử dụng Internet Công cộng. Để tạo endpoint, bạn phải chỉ định VPC mà bạn muốn tạo endpoint và dịch vụ (trong trường hợp này là S3) mà bạn muốn thiết lập kết nối.
+Trong phần này, bạn sẽ thực hiện kết nối mã nguồn Node.js với **Amazon RDS** thông qua **Prisma ORM**. Việc sử dụng Prisma giúp tối ưu hóa thao tác truy vấn dữ liệu, đảm bảo an toàn kiểu dữ liệu (Type-safe) và quản lý cấu trúc bảng (Schema) một cách đồng bộ trên môi trường AWS Cloud.
 
-![overview](/images/5-Workshop/5.3-S3-vpc/diagram2.png)
 
 #### Nội dung
 
-- [Tạo gateway endpoint](3.1-create-gwe/)
-- [Test gateway endpoint](3.2-test-gwe/)
+- [Thiết lập Database trên RDS](4.3.1-setup-rds/)
+- [Cấu hình Prisma Client](4.3.2-config-prisma/)
+- [Thực thi Truy vấn & Lưu trữ](4.3.3-query-data/)
+
+---
+### Tại sao nội dung này quan trọng?
+* **Khác biệt với DB local**: Khi dùng RDS, bạn phải quản lý chuỗi kết nối qua biến môi trường `.env` để bảo mật thông tin.
+* **Đồng bộ hóa Schema**: Sử dụng lệnh `npx prisma db push` để đảm bảo bảng dữ liệu trên Cloud luôn khớp với định nghĩa trong mã nguồn của team.

@@ -27,7 +27,7 @@ Trong hệ thống thực tế, dữ liệu cần được lưu trữ ở một 
    - **Master password**: *Nhập mật khẩu mạnh và lưu lại cẩn thận.*
 7. Tại mục **Connectivity**:
    - **Public access**: Chọn **Yes**. 
-   > **Lưu ý:** Trong thực tế sản xuất nên chọn No. Chúng ta bật để máy local của bạn kết nối được phục vụ quá trình thực hành demo.
+   > **Lưu ý:** Trong thực tế sản xuất, bạn nên chọn No. Chúng ta bật để máy local của bạn kết nối được phục vụ quá trình thực hành demo.
 8. Nhấn **Create database** (Đợi khoảng 5-10 phút để hệ thống khởi tạo).
 
 ---
@@ -38,12 +38,12 @@ Sau khi RDS hiển thị trạng thái **Available**, bạn cần cho phép máy
 
 1. Bấm vào tên cơ sở dữ liệu `ecommerce-ai-db`.
 2. Tại tab **Connectivity & security**, tìm mục **Security** và bấm vào link của **VPC security groups**.
-3. Chọn Security Group đó, chuyển sang tab **Inbound rules** -> **Edit inbound rules**.
+3. Chọn Security Group đó, chuyển sang tab **Inbound rules** -> bấm **Edit inbound rules**.
 4. Thêm một quy tắc mới:
    - **Type**: PostgreSQL
    - **Port range**: 5432
    - **Source**: Chọn **Anywhere-IPv4** (0.0.0.0/0) hoặc **My IP**.
-   - 5. Bấm **Save rules**.
+5. Bấm **Save rules**.
 6. Quay lại trang chi tiết RDS, sao chép địa chỉ **Endpoint** (Ví dụ: `ecommerce-ai-db.xxxxxx.rds.amazonaws.com`).
 
 ---
@@ -53,6 +53,7 @@ Sau khi RDS hiển thị trạng thái **Available**, bạn cần cho phép máy
 Tại thư mục mã nguồn Backend, bạn thực hiện toàn bộ các thao tác dưới đây để kết nối và thiết lập database:
 
 **Code:**
+```bash
 # 1. Cài đặt thư viện Prisma và Client
 npm install prisma --save-dev
 npm install @prisma/client
@@ -71,19 +72,34 @@ npx prisma init
 #   provider = "postgresql"
 #   url      = env("DATABASE_URL")
 # }
-# model User {
-#   id        Int      @id @default(autoincrement())
-#   email     String   @unique
-#   role      String   @default("CUSTOMER")
-#   analyses  SkinAnalysis[]
-# }
-# model SkinAnalysis {
-#   id          Int      @id @default(autoincrement())
-#   userId      Int
-#   user        User     @relation(fields: [userId], references: [id])
-#   imageUrl    String
-#   aiResult    Json
-#   createdAt   DateTime @default(now())
+# model Customer {
+#   id           String         @id @default(uuid())
+#   firstName    String?        @map("first_name")
+#   lastName     String?        @map("last_name")
+#   accountName  String         @map("accountName")
+#   mail         String         @unique
+#   phoneNumber  String?        @map("phone_number") @db.VarChar(10)
+#   
+#   passwordHash String?        @map("password_hash") // Đổi thành Optional (?)
+#   googleId     String?        @unique @map("google_id") // Lưu ID định danh từ Google
+#   authProvider String         @default("LOCAL") @map("auth_provider") // Đánh dấu: LOCAL, GOOGLE
+#   
+#   refreshToken String?        @map("refresh_token")
+#   avatarUrl    String?        @map("avatar_url")
+#   isActive     Boolean        @default(true) @map("is_active")
+#   gender       String?        @db.VarChar(10)
+#   birthday     DateTime?      @db.Date
+#   skinProfile  Json?          @map("skin_profile")
+#   tier         Int?
+#   createdAt    DateTime       @default(now()) @map("created_at")
+#   addressId    String?        @map("address_id")
+#   
+#   resetTokens  PasswordResetToken[]
+#   address      Address?       @relation(fields: [addressId], references: [id])
+#   carts        Cart[]
+#   CouponUsage  CouponUsage[]
+# 
+#   @@map("customer")
 # }
 
 # 5. Đẩy cấu trúc bảng lên Amazon RDS
