@@ -11,7 +11,7 @@ pre : " <b> 4.4.2. </b> "
 1. Log in to the **AWS Management Console** and search for the **Elastic Container Registry (ECR)** service.
 2. On the main ECR screen, click the **Create repository** button to start creating a new repository.
 
-![Access ECR](/images/4.4-AI-Backend-ECS/4.4.2-Amazon-ECR/step1-navigate.png)
+![Access ECR](/images/4-Workshop/4.4-AI-Backend-ECS/4.4.2-Amazon-ECR/step1-navigate.png)
 
 #### Step 2: Configure Repository information
 
@@ -19,14 +19,14 @@ pre : " <b> 4.4.2. </b> "
 2. In the **Image tag settings** section, select **Mutable**.
 3. Keep the remaining default settings, scroll down to the bottom of the page, and click the **Create repository** button.
 
-![Configure Repository](/images/4.4-AI-Backend-ECS/4.4.2-Amazon-ECR/step2-config-repo.png)
+![Configure Repository](/images/4-Workshop/4.4-AI-Backend-ECS/4.4.2-Amazon-ECR/step2-config-repo.png)
 
 #### Step 3: Get the list of execution commands
 
 1. After successful creation, your repository will appear in the list. Click on the name of the repository you just created.
 2. In the top right corner, click the **View push commands** button.
 
-![View Push Commands Button](/images/4.4-AI-Backend-ECS/4.4.2-Amazon-ECR/step3-view-btn.png)
+![View Push Commands Button](/images/4-Workshop/4.4-AI-Backend-ECS/4.4.2-Amazon-ECR/step3-view-btn.png)
 
 #### Step 4: Execute push commands from the Terminal
 
@@ -40,4 +40,4 @@ pre : " <b> 4.4.2. </b> "
 2. You will see a new record appear with the Image tag as `latest`.
 3. Pay attention and copy the **URI** column in the Repositories tab (It will be in the format `[Your-Account-ID].dkr.ecr.[Your-Region].amazonaws.com/[Your-Repo-Name]:latest`). We will use this URI snippet for the next server configuration step.
 
-![Image Results on ECR](/images/4.4-AI-Backend-ECS/4.4.2-Amazon-ECR/step4-result-uri.png)
+![Image Results on ECR](/images/4-Workshop/4.4-AI-Backend-ECS/4.4.2-Amazon-ECR/step4-result-uri.png)

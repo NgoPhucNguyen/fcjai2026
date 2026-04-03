@@ -1,20 +1,26 @@
 ---
-title : "Truy cập S3 từ môi trường truyền thống"
-date : 2024-01-01 
-weight : 4 
-chapter : false
-pre : " <b> 5.4. </b> "
+title : "Triển khai AI Backend"
+date : 2026-04-03
+weight : 4
+chapter : true
+pre : " <b> 4.4. </b> "
 ---
 
-#### Tổng quan
+#### Triển khai AI Backend trên AWS
 
-+ Trong phần này, bạn sẽ tạo một Interface Endpoint để truy cập Amazon S3 từ môi trường truyền thống mô phỏng. Interface Endpoint sẽ cho phép bạn định tuyến đến Amazon S3 qua kết nối VPN từ môi trường truyền thống mô phỏng của bạn.
+Trong phần này, bạn sẽ thực hiện đóng gói và triển khai mã nguồn Backend AI (bao gồm Node.js và các mô hình Python phân tích da mặt) lên môi trường đám mây. Việc sử dụng kiến trúc Container kết hợp với các dịch vụ phi máy chủ giúp hệ thống cô lập môi trường chạy an toàn và quản lý tài nguyên tính toán một cách linh hoạt.
 
-+ Tại sao nên sử dụng **Interface Endpoint**:
-    + Các Gateway endpoints chỉ hoạt động với các tài nguyên đang chạy trong VPC nơi chúng được tạo. Interface Endpoint  hoạt động với tài nguyên chạy trong VPC và cả tài nguyên chạy trong môi trường truyền thống. Khả năng kết nối từ môi trường truyền thống của bạn với aws cloud có thể được cung cấp bởi AWS Site-to-Site VPN hoặc AWS Direct Connect.
-    + Interface Endpoint cho phép bạn kết nối với các dịch vụ do AWS PrivateLink cung cấp. Các dịch vụ này bao gồm một số dịch vụ AWS, dịch vụ do các đối tác và khách hàng AWS lưu trữ trong VPC của riêng họ (gọi tắt là Dịch vụ PrivateLink endpoints) và các dịch vụ Đối tác AWS Marketplace. Đối với workshop này, chúng ta sẽ tập trung vào việc kết nối với Amazon S3.
-    
-![Interface endpoint architecture](/images/5-Workshop/5.4-S3-onprem/diagram3.png)
+#### Nội dung
 
+- [Đóng gói với Docker](4.4.1-Docker-Packaging/)
+- [Lưu trữ trên Amazon ECR](4.4.2-Amazon-ECR/)
+- [Cấu hình Task Definition](4.4.3-Task-Definition/)
+- [Khởi chạy ECS Service](4.4.4-ECS-Service/)
+- [Tối ưu hóa API với CloudFront](4.4.5-API-CloudFront/)
 
+---
 
+### Tại sao nội dung này quan trọng?
+* **Đồng nhất môi trường (Environment Consistency)**: Đóng gói bằng Docker đảm bảo mã nguồn chứa nhiều thư viện phức tạp (như TensorFlow, OpenCV) hoạt động ổn định trên môi trường AWS Cloud giống hệt như máy tính cá nhân.
+* **Khả năng mở rộng tự động (Scalability)**: Vận hành trên Amazon ECS Fargate cho phép phân hệ AI tự động cấp phát và mở rộng tài nguyên (RAM/CPU) một cách độc lập khi có nhiều lưu lượng phân tích ảnh tải lên cùng lúc, tránh tình trạng quá tải hoặc sập hệ thống.
+* **Bảo mật và Giảm độ trễ API**: Sử dụng CloudFront làm proxy cho ECS giúp ẩn địa chỉ IP thật của máy chủ, định tuyến lưu lượng qua mạng lưới cáp quang nội bộ của AWS và sẵn sàng để gắn tường lửa WAF bảo vệ.
