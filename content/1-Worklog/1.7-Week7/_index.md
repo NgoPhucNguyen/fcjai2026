@@ -1,57 +1,26 @@
 ---
 title: "Week 7 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-02-16
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 7 Objectives:
+* Optimize data and static asset delivery performance using a Content Delivery Network (CDN).
+* Analyze and evaluate the cost and security risks of the current system architecture.
+* Research alternative architectural solutions for future flexibility and cost savings.
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
-
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+### Tasks to be implemented this week:
+| Day | Task | Start Date | End Date | Resources |
+| :--- | :--- | :--- | :--- | :--- |
+| Mon | Established a connection between Amazon RDS and the Amplify-hosted Frontend, routed through Amazon CloudFront. | 22/09/2025 | 22/09/2025 | AWS Documentation |
+| Tue | Integrated Amazon S3 with CloudFront to accelerate product image fetching, laying the groundwork for future scalable features. | 23/09/2025 | 23/09/2025 | AWS Optimization |
+| Wed | Compiled and analyzed the Cost Estimation for the cluster of AWS services currently running in the project. | 24/09/2025 | 24/09/2025 | AWS Pricing Calculator |
+| Thu | Evaluated the overall project architecture from two perspectives: User Data Security and System Scalability. | 25/09/2025 | 25/09/2025 | AWS Well-Architected |
+| Fri | Began researching Amazon ECS (Elastic Container Service) and the concept of application containerization. | 26/09/2025 | 26/09/2025 | AWS Documentation |
 
 ### Week 7 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Experience Optimization:** The delivery of static content is noticeably faster thanks to the tight integration between S3 and CloudFront.
+* **Advanced Systems Thinking:** Learned to view the project at a larger scale, questioning safety and scalability in the face of potential user traffic spikes.
+* **Cost Awareness:** Concluded that maintaining traditional Amazon EC2 servers continuously could lead to resource waste and high costs. This set the stage for the team to pivot toward more optimal solutions like ECS (Containers).

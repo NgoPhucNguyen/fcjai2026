@@ -1,59 +1,27 @@
 ---
 title: "Worklog Tuần 3"
-date: 2024-01-01
-weight: 1
+date: 2026-01-19
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 3:
-
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Xác định rõ yêu cầu nghiệp vụ và danh mục sản phẩm cho nền tảng thương mại điện tử.
+* Thiết kế kiến trúc luồng dữ liệu (data flow) kết nối giữa cơ sở dữ liệu và hệ thống máy chủ.
+* Thực hành triển khai giao diện người dùng và thiết lập cơ chế bảo mật cơ bản.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| :--- | :--- | :--- | :--- | :--- |
+| 2 | Nghiên cứu danh mục sản phẩm (mỹ phẩm chăm sóc da) và phân tích các tính năng cốt lõi cần có cho website. | 25/08/2025 | 25/08/2025 | Yêu cầu dự án |
+| 3 | Thiết kế luồng hoạt động chi tiết (flow) từ Database sang hệ thống Backend để chuẩn bị cho việc gọi API. | 26/08/2025 | 26/08/2025 | Nội bộ nhóm |
+| 4 | Tìm hiểu quy trình cấu hình web server và phương pháp host website trực tiếp trên Amazon EC2. | 27/08/2025 | 27/08/2025 | AWS Documentation |
+| 5 | Triển khai một phiên bản Frontend mẫu (UI prototype) để kiểm tra khả năng tích hợp và hiển thị. | 28/08/2025 | 28/08/2025 | Thực hành cá nhân |
+| 6 | Nghiên cứu các cơ chế xác thực người dùng (Authentication) và phân quyền bảo mật trên môi trường web. | 29/08/2025 | 29/08/2025 | Tài liệu chuyên ngành |
 
 ### Kết quả đạt được tuần 3:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Định hình sản phẩm:** Hình dung và lập danh sách chi tiết các chức năng thực sự cần thiết mà website phải đáp ứng cho người dùng.
+* **Hiểu biết bảo mật:** Nắm vững lý thuyết cơ bản về Authentication, hiểu cách thức hoạt động của luồng Đăng nhập/Đăng ký (Login) an toàn.
+* **Kỹ năng tích hợp:** Bắt đầu có sự liên kết giữa các thành phần độc lập (Database, Backend, Frontend) và môi trường triển khai (EC2).

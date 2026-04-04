@@ -1,59 +1,27 @@
 ---
 title: "Worklog Tuần 7"
-date: 2024-01-01
-weight: 1
+date: 2026-02-23
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 7:
-
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tối ưu hóa hiệu suất truyền tải dữ liệu và tài nguyên tĩnh bằng mạng phân phối nội dung (CDN).
+* Phân tích, đánh giá bài toán chi phí và rủi ro bảo mật của cấu trúc hệ thống hiện tại.
+* Nghiên cứu các giải pháp kiến trúc thay thế linh hoạt và tiết kiệm hơn cho tương lai.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| :--- | :--- | :--- | :--- | :--- |
+| 2 | Thiết lập kết nối giữa Amazon RDS và Frontend triển khai trên Amplify, định tuyến thông qua Amazon CloudFront. | 22/09/2025 | 22/09/2025 | AWS Documentation |
+| 3 | Tích hợp Amazon S3 với CloudFront để tăng tốc độ truy xuất hình ảnh sản phẩm (fetch), tạo nền tảng cho các tính năng mở rộng sau này. | 23/09/2025 | 23/09/2025 | Tối ưu hóa AWS |
+| 4 | Tổng hợp và phân tích dự toán chi phí (Cost Estimation) cho cụm dịch vụ AWS đang vận hành trong dự án. | 24/09/2025 | 24/09/2025 | AWS Pricing Calculator |
+| 5 | Đánh giá tổng thể kiến trúc dự án dưới hai góc độ: Bảo mật dữ liệu người dùng (Security) và Khả năng chịu tải (Scalability). | 25/09/2025 | 25/09/2025 | AWS Well-Architected |
+| 6 | Bắt đầu nghiên cứu về Amazon ECS (Elastic Container Service) và khái niệm container hóa ứng dụng. | 26/09/2025 | 26/09/2025 | AWS Documentation |
 
 ### Kết quả đạt được tuần 7:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Tối ưu trải nghiệm:** Hệ thống phân phối nội dung tĩnh nhanh hơn hẳn nhờ sự kết hợp chặt chẽ giữa S3 và CloudFront.
+* **Tư duy hệ thống chuyên sâu:** Biết cách nhìn nhận dự án ở quy mô lớn hơn, đặt câu hỏi về tính an toàn và khả năng mở rộng khi lượng người dùng tăng đột biến.
+* **Nhận thức về chi phí:** Rút ra kết luận quan trọng rằng việc duy trì máy chủ Amazon EC2 liên tục theo cách truyền thống có thể gây lãng phí tài nguyên và tốn kém ngân sách. Điều này tạo tiền đề để nhóm chuyển hướng sang tìm hiểu các giải pháp tối ưu hơn như ECS (Container).

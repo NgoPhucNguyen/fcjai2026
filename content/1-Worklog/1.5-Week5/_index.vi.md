@@ -1,59 +1,27 @@
 ---
 title: "Worklog Tuần 5"
-date: 2024-01-01
-weight: 1
+date: 2026-02-02
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 5:
-
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Triển khai và quản trị cơ sở dữ liệu đám mây với Amazon RDS.
+* Áp dụng các chiến lược tối ưu hóa chi phí lưu trữ cơ sở dữ liệu cho dự án.
+* Tích hợp thành công công cụ ORM để đồng bộ dữ liệu giữa môi trường phát triển và máy chủ.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| :--- | :--- | :--- | :--- | :--- |
+| 2 | Thiết lập và kiểm tra kết nối trực tiếp từ máy tính cục bộ (local machine) đến Amazon RDS. | 08/09/2025 | 08/09/2025 | Thực hành cá nhân |
+| 3 | Nghiên cứu các chiến lược giảm thiểu chi phí cho RDS, quyết định không cấu hình Multi-AZ để phù hợp với ngân sách giai đoạn thử nghiệm. | 09/09/2025 | 09/09/2025 | AWS Cost Optimization |
+| 4 | Cài đặt và cấu hình Prisma ORM trên môi trường local; thực hiện kiểm thử các luồng truy vấn dữ liệu người dùng. | 10/09/2025 | 10/09/2025 | Prisma Documentation |
+| 5 | Đưa Prisma lên môi trường máy chủ EC2; thiết lập mạng và bảo mật để kết nối thành công giữa EC2 và RDS. | 11/09/2025 | 11/09/2025 | AWS Documentation |
+| 6 | Bắt đầu tìm hiểu về dịch vụ lưu trữ đối tượng Amazon S3 để chuẩn bị cho việc lưu trữ tài nguyên tĩnh (hình ảnh sản phẩm mỹ phẩm, file hệ thống). | 12/09/2025 | 12/09/2025 | AWS Documentation |
 
 ### Kết quả đạt được tuần 5:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Quản trị Database hiệu quả:** Xây dựng được quy trình kết nối và tương tác với Amazon RDS một cách hợp lý, tối ưu hóa được hiệu suất làm việc.
+* **Tối ưu chi phí:** Nắm rõ tác động tài chính của các tùy chọn cấu hình (như Multi-AZ) và biết cách loại bỏ các cấu hình không cần thiết để tiết kiệm ngân sách.
+* **Chuẩn hóa luồng làm việc:** Việc cấu hình thành công Prisma ORM và thiết lập kết nối EC2 - RDS rõ ràng đã tạo ra một quy trình chuẩn, dễ hiểu, giúp bất kỳ thành viên nào trong nhóm cũng có thể tham gia thao tác và tiếp quản.

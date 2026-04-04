@@ -1,59 +1,27 @@
 ---
 title: "Worklog Tuần 4"
-date: 2024-01-01
-weight: 1
+date: 2026-01-26
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 4:
-
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Hoàn thiện luồng xác thực người dùng và đảm bảo hệ thống vận hành ổn định.
+* Khắc phục triệt để các sự cố kỹ thuật trên môi trường triển khai.
+* Rà soát tiến độ tổng thể của nhóm và lên kế hoạch kết hợp các dịch vụ AWS tối ưu chi phí.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| :--- | :--- | :--- | :--- | :--- |
+| 2 | Tiếp tục gỡ lỗi (debug) và hoàn thiện cơ chế xác thực người dùng (Authentication) cho nền tảng. | 01/09/2025 | 01/09/2025 | Tài liệu kỹ thuật |
+| 3 | Chẩn đoán và xử lý các lỗi phát sinh trên Amazon EC2; rà soát lại toàn bộ luồng hoạt động của hệ thống. | 02/09/2025 | 02/09/2025 | AWS Documentation |
+| 4 | Cập nhật và đối chiếu tiến độ công việc với các thành viên khác trong nhóm; tiếp tục khắc phục các lỗi tích hợp tồn đọng. | 03/09/2025 | 03/09/2025 | Nội bộ nhóm |
+| 5 | Họp nhóm đánh giá định kỳ: Các thành viên báo cáo kết quả nghiên cứu cá nhân và cùng thảo luận về định hướng phát triển tương lai của dự án. | 04/09/2025 | 04/09/2025 | Nội bộ nhóm |
+| 6 | Bắt đầu nghiên cứu về Amazon RDS (Relational Database Service) để chuẩn bị cho việc di chuyển cơ sở dữ liệu lên cloud. | 05/09/2025 | 05/09/2025 | AWS Documentation |
 
 ### Kết quả đạt được tuần 4:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Kỹ năng giải quyết vấn đề:** Nâng cao kinh nghiệm thực tế trong việc phát hiện, chẩn đoán và khắc phục sự cố (troubleshooting) trên cả mã nguồn và máy chủ.
+* **Định hướng kiến trúc:** Nhận thức rõ hơn về chiến lược lựa chọn và kết hợp các dịch vụ đám mây, ưu tiên các giải pháp đáp ứng tốt yêu cầu kỹ thuật đồng thời bám sát mục tiêu tiết kiệm chi phí cho dự án.
+* **Kỹ năng làm việc nhóm:** Đảm bảo sự đồng bộ về thông tin và tầm nhìn giữa 5 thành viên trong giai đoạn phát triển cốt lõi.

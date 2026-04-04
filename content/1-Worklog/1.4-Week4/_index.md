@@ -1,57 +1,26 @@
 ---
 title: "Week 4 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-01-26
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 4 Objectives:
+* Finalize user authentication flows and ensure stable system operation.
+* Completely resolve technical issues in the deployment environment.
+* Review overall team progress and plan for cost-optimized AWS service integration.
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
-
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+### Tasks to be implemented this week:
+| Day | Task | Start Date | End Date | Resources |
+| :--- | :--- | :--- | :--- | :--- |
+| Mon | Continued debugging and refining the platform's Authentication mechanism. | 01/09/2025 | 01/09/2025 | Technical Docs |
+| Tue | Diagnosed and fixed bugs on Amazon EC2; reviewed the entire system operational flow. | 02/09/2025 | 02/09/2025 | AWS Documentation |
+| Wed | Synced progress with team members; continued resolving lingering integration bugs. | 03/09/2025 | 03/09/2025 | Team Collaboration |
+| Thu | Held a milestone team meeting: Members reported research findings and discussed the future direction of the project. | 04/09/2025 | 04/09/2025 | Team Collaboration |
+| Fri | Began researching Amazon RDS (Relational Database Service) in preparation for cloud database migration. | 05/09/2025 | 05/09/2025 | AWS Documentation |
 
 ### Week 4 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Problem-Solving Skills:** Improved practical experience in detecting, diagnosing, and troubleshooting issues across source code and servers.
+* **Architectural Direction:** Developed a clearer strategy for selecting and combining cloud services, prioritizing technical compliance while adhering to cost-saving goals.
+* **Teamwork:** Ensured alignment of information and vision among the 5 team members during the core development phase.

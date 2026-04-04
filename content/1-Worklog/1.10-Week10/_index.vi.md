@@ -1,59 +1,27 @@
 ---
 title: "Worklog Tuần 10"
-date: 2024-01-01
-weight: 2
+date: 2026-03-16
+weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 10:
-
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Xây dựng hệ thống quản trị nội dung và bán hàng dành cho Admin.
+* Hoàn thiện luồng thanh toán điện tử và các tính năng kích cầu mua sắm (Khuyến mãi).
+* Cải thiện Trải nghiệm người dùng (UX) và rà soát lỗi tổng thể trên môi trường thực tế.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| :--- | :--- | :--- | :--- | :--- |
+| 2 | Phát triển giao diện quản trị (Admin Dashboard) để quản lý sản phẩm, đơn hàng và người dùng. | 16/03/2026 | 16/03/2026 | Thực hành cá nhân |
+| 3 | Thiết kế logic và giao diện cho hệ thống Mã giảm giá (Vouchers) và các chương trình Khuyến mãi. | 17/03/2026 | 17/03/2026 | Nội bộ nhóm |
+| 4 | Kiểm thử lại toàn bộ tính năng; nâng cấp giao diện và bổ sung các chỉ dẫn trực quan để người dùng dễ dàng hiểu rõ các thao tác trên trang. | 18/03/2026 | 18/03/2026 | Trải nghiệm người dùng |
+| 5 | Tích hợp cổng thanh toán trực tuyến: Triển khai và thử nghiệm thành công VNPay Sandbox. | 19/03/2026 | 19/03/2026 | VNPay API Docs |
+| 6 | Kiểm thử toàn diện dự án trên môi trường Production; phát hiện và khắc phục các lỗi (bug) còn tồn đọng. | 20/03/2026 | 20/03/2026 | Thực hành cá nhân |
 
 ### Kết quả đạt được tuần 10:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Mở rộng tính năng cốt lõi:** Hoàn thiện mảnh ghép quan trọng của nền tảng thương mại điện tử với sự xuất hiện của trang quản trị Admin và luồng thanh toán qua VNPay.
+* **Nâng cấp trải nghiệm:** Giao diện được tinh chỉnh trở nên thân thiện và trực quan hơn, giúp người dùng thao tác mượt mà và không bị bỡ ngỡ.
+* **Tăng cường tính ổn định:** Việc rà soát và sửa lỗi liên tục trên môi trường Production giúp hệ thống sẵn sàng hơn cho đợt đánh giá cuối cùng.

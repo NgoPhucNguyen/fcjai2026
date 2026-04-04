@@ -1,57 +1,27 @@
 ---
 title: "Week 10 Worklog"
-date: 2024-01-01
-weight: 2
+date: 2026-03-16
+weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 10 Objectives:
+* Build the content and sales management system for Administrators.
+* Finalize the electronic payment flow and shopping incentive features (Promotions).
+* Enhance User Experience (UX) and conduct comprehensive bug tracking in the live environment.
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
-
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+### Tasks to be implemented this week:
+| Day | Task | Start Date | End Date | Resources |
+| :--- | :--- | :--- | :--- | :--- |
+| Mon | Developed the Administrator interface (Admin Dashboard) to manage products, orders, and users. | 16/03/2026 | 16/03/2026 | Personal Practice |
+| Tue | Designed the logic and interface for the Discount Codes (Vouchers) and Promotions system. | 17/03/2026 | 17/03/2026 | Team Collaboration |
+| Wed | Retested all features; upgraded the UI and added intuitive indicators to help users easily understand their actions on the site. | 18/03/2026 | 18/03/2026 | UX Guidelines |
+| Thu | Integrated online payment gateway: Deployed and successfully tested VNPay Sandbox. | 19/03/2026 | 19/03/2026 | VNPay API Docs |
+| Fri | Conducted comprehensive project testing on the Production environment; identified and fixed remaining bugs. | 20/03/2026 | 20/03/2026 | Personal Practice |
 
 ### Week 10 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Core Feature Expansion:** Completed crucial components of the e-commerce platform with the introduction of the Admin dashboard and VNPay payment flow.
+* **Experience Upgrade:** The interface was refined to be more user-friendly and intuitive, ensuring smooth and clear navigation for users.
+* **Enhanced Stability:** Continuous testing and bug fixing in the Production environment have made the system significantly more ready for the final evaluation.
