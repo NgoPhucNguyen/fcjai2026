@@ -9,21 +9,21 @@ chapter: false
 ### Thông tin sinh viên:
 &emsp; **Họ và tên:** Ngo Phuc Nguyen
 
-&emsp; **Số điện thoại:** 0989888999
+&emsp; **Số điện thoại:** 0902182458
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Email:** phucnguyenngo2005@gmail.com
 
-&emsp; **Trường:** Đại học Sư phạm Kỹ thuật TP.HCM
+&emsp; **Trường:**  FPT Thành Phố Hồ Chí Minh
 
-&emsp; **Ngành:** Công nghệ thông tin
+&emsp; **Ngành:** Trí tuệ nhân tạo
 
-&emsp; **Lớp:** AWS082025
+&emsp; **Lớp:** FPT-SS2
 
-&emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam
+&emsp; **Công ty thực tập:** Amazon Web Services Vietnam Co., Ltd.
 
 &emsp; **Vị trí thực tập:** FCJ Cloud Intern
 
-&emsp; **Thời gian thực tập:** Từ ngày 12/08/2025 đến ngày 12/11/2025
+&emsp; **Thời gian thực tập:** Từ ngày 12/01/2026 đến ngày 18/04/2026
 
 ![Ảnh đại diện](/images/avatar.png)
 
